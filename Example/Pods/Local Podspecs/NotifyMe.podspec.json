@@ -1,0 +1,22 @@
+{
+  "name": "NotifyMe",
+  "version": "0.1.0",
+  "summary": "A short description of NotifyMe.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fritiof@gure.se/NotifyMe",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fritiof@gure.se": "fritiof@gure.se"
+  },
+  "source": {
+    "git": "https://github.com/fritiof@gure.se/NotifyMe.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NotifyMe/Classes/**/*"
+}
