@@ -1,22 +1,23 @@
 {
   "name": "NotifyMe",
   "version": "0.1.0",
-  "summary": "A short description of NotifyMe.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/fritiof@gure.se/NotifyMe",
+  "summary": "NotifyMe is a beatiful framework for handling notifications in-app.",
+  "description": "A very descriptive description is coming to a cocoapod near you! A very descriptive description is coming to a cocoapod near you!",
+  "homepage": "https://github.com/fritiof/NotifyMe",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "fritiof@gure.se": "fritiof@gure.se"
+    "Fritiof Gure": "fritiof@gure.se"
   },
   "source": {
-    "git": "https://github.com/fritiof@gure.se/NotifyMe.git",
+    "git": "https://github.com/fritiof/NotifyMe.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "NotifyMe/Classes/**/*"
+  "source_files": "NotifyMe/Classes/**/*",
+  "frameworks": "UIKit"
 }

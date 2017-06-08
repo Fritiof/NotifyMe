@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import NotifyMe
 
 class ViewController: UIViewController {
+    
+    let notifyMe = NotifyMe()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func notifyMeButtonTapped(sender: UIButton) {
+        notifyMe.presentNotification(inView: view, backgroundColor: UIColor.purple, text: "Hey fucker")
+    }
+    
+    @IBAction func removeNotificationTapped(sender: UIButton) {
+        notifyMe.removeNotifications()
     }
 
 }
