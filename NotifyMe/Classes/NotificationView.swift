@@ -14,11 +14,8 @@ class NotificationView: UIView {
     
     private var notification: Notification?
     
-    override func awakeFromNib() {
-        self
-    }
-    
     func setupView(superView: UIView, notification: Notification) {
+        superView.clipsToBounds = true
         self.notification = notification
         
         let newFrame = CGRect(x: superView.bounds.minX, y: superView.bounds.minY - notification.height, width: superView.bounds.size.width, height: notification.height)
