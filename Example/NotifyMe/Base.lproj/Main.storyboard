@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,25 +30,30 @@
                                     <action selector="notifyMeButtonTappedWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iPx-vV-SXM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fq3-Db-Nv5">
-                                <rect key="frame" x="159.5" y="579" width="55" height="30"/>
-                                <state key="normal" title="Remove"/>
-                                <connections>
-                                    <action selector="removeNotificationTappedWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hso-BL-hjS"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S40-9c-0Y8">
+                                <rect key="frame" x="66" y="354" width="243" height="243"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="S40-9c-0Y8" secondAttribute="width" multiplier="1:1" id="MlQ-Oh-Jgr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.76473253969999999" green="0.76473271850000002" blue="0.76473134760000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Fq3-Db-Nv5" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="48y-6G-WZm"/>
-                            <constraint firstItem="P1J-S7-7jh" firstAttribute="top" secondItem="Fq3-Db-Nv5" secondAttribute="bottom" constant="8" id="US3-BH-7cy"/>
+                            <constraint firstItem="S40-9c-0Y8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="0gG-Ef-ceD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S40-9c-0Y8" secondAttribute="trailing" constant="50" id="GdO-BZ-xr0"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="P1J-S7-7jh" secondAttribute="bottom" constant="20" id="aDf-Tf-Yk3"/>
                             <constraint firstItem="P1J-S7-7jh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dDo-pA-2Bk"/>
+                            <constraint firstItem="P1J-S7-7jh" firstAttribute="top" secondItem="S40-9c-0Y8" secondAttribute="bottom" constant="20" id="uaB-1m-3IJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="smallView" destination="S40-9c-0Y8" id="0DT-A0-l6e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,10 @@ class NotificationView: UIView {
     
     private var notification: Notification?
     
+    override func awakeFromNib() {
+        self
+    }
+    
     func setupView(superView: UIView, notification: Notification) {
         self.notification = notification
         
@@ -23,6 +27,7 @@ class NotificationView: UIView {
         label.text = notification.text
         label.textColor = notification.textColor
         
+        self.backgroundColor = notification.backgroundColor
         
         superView.addSubview(self)
     }

@@ -10,15 +10,17 @@ import UIKit
 
 public class NotifyMe {
     
-    // public properties
+    // Public properties
     
-    // TODO: - create public properties
+    private var notificationHeight: CGFloat
+    private var notificationBackgroundColor: UIColor
+    private var notificationTextColor: UIColor
     
     // Public methods
     
-    public func presentNotification(inView view: UIView, backgroundColor: UIColor = UIColor.purple, height: CGFloat = 60.0, text: String, textColor: UIColor = .white) {
+    public func presentNotification(inView view: UIView, text: String) {
         let notifyView = NotificationView.instanceFromNib()
-        let notification = Notification(notificationView: notifyView, backgroundColor: backgroundColor, height: height, text: text, textColor: textColor)
+        let notification = Notification(notificationView: notifyView, backgroundColor: notificationBackgroundColor, height: notificationHeight, text: text, textColor: notificationTextColor)
         
         notifyView.setupView(superView: view, notification: notification)
         
@@ -44,7 +46,9 @@ public class NotifyMe {
         })
     }
     
-    public init() {
-        
+    public init(backgroundColor: UIColor = .purple, height: CGFloat = 60, textColor: UIColor = .white) {
+        self.notificationBackgroundColor = backgroundColor
+        self.notificationHeight = height
+        self.notificationTextColor = textColor
     }
 }
