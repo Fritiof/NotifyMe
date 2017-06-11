@@ -33,10 +33,11 @@ A very descriptive description is coming to a cocoapod near you! A very descript
   s.source_files = 'NotifyMe/Classes/**/*'
   
   # s.resource_bundles = {
-  #   'NotifyMe' => ['NotifyMe/Assets/*.png']
+  #   'NotifyMe' => ['NotifyMe/Assets/*.png', 'Pod/**/*.xib']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
 end

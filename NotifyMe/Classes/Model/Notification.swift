@@ -11,15 +11,13 @@ import UIKit
 
 struct Notification {
     
-    private(set) var superView: UIView
-    private(set) var notificationView: UIView
+    private(set) var notificationView: NotificationView
     private(set) var backgroundColor: UIColor
     private(set) var height: CGFloat
-    private(set) var text: UILabel
+    private(set) var text: String
     private(set) var textColor: UIColor
-    private(set) var heightConstraint: NSLayoutConstraint
     
-    func removeFromSuperView() {
-        notificationView.removeFromSuperview()
-    }
+//    init(notificationView: NotificationView) {
+//        self.notificationView = notificationView
+//    }
 }
