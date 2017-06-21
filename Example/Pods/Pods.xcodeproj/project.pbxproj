@@ -12,6 +12,7 @@
 		22391B42DBA5A5507A6E2B7D98D406E0 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BEDE9041C874C2A08757AB74F582EF /* Notification.swift */; };
 		27B56E5454E56DE9AEEC03440C081B63 /* Pods-NotifyMe_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE20FC65167C85EF626837526DDEA17 /* Pods-NotifyMe_Tests-dummy.m */; };
 		3ED1AA8E0F5F51CCCEC145517D9582A9 /* Pods-NotifyMe_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98638FE42C28F6312FB63F5F3284116A /* Pods-NotifyMe_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4581A28D1EFB0F6D00AF451D /* UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581A28C1EFB0F6D00AF451D /* UITapGestureRecognizer.swift */; };
 		6B397B5F06EAF4D5668A808AAA64BFE2 /* Pods-NotifyMe_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5025003360B8F3622C230D02820FE73 /* Pods-NotifyMe_Example-dummy.m */; };
 		7544E28CAD5C0935EDBEF62CB7540CB5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995DC771922C31896DF3A49C7D5EF116 /* NotificationView.swift */; };
 		84926F149CDD179F33F8E824868CC410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -35,21 +36,22 @@
 
 /* Begin PBXFileReference section */
 		0488CB21054B55C062CC8A3502A939BF /* NotifyMe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotifyMe-prefix.pch"; sourceTree = "<group>"; };
-		0AD415C089894F8AFA090474E8D54A3F /* NotifyMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NotifyMe.modulemap; sourceTree = "<group>"; };
+		0AD415C089894F8AFA090474E8D54A3F /* NotifyMe.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NotifyMe.modulemap; sourceTree = "<group>"; };
 		0F5E77F0C8D295EF25754E744CA50D8A /* Pods-NotifyMe_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotifyMe_Example.release.xcconfig"; sourceTree = "<group>"; };
 		13CDC5553024E0B450D4919A48ED3C37 /* Pods-NotifyMe_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotifyMe_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1FE20FC65167C85EF626837526DDEA17 /* Pods-NotifyMe_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NotifyMe_Tests-dummy.m"; sourceTree = "<group>"; };
-		2B42BED178C163B03306B6DF3688F02D /* Pods-NotifyMe_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotifyMe_Tests.modulemap"; sourceTree = "<group>"; };
+		2B42BED178C163B03306B6DF3688F02D /* Pods-NotifyMe_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NotifyMe_Tests.modulemap"; sourceTree = "<group>"; };
 		2C816A9364C8FF09541D753AD2300971 /* NotificationView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = NotificationView.xib; sourceTree = "<group>"; };
+		4581A28C1EFB0F6D00AF451D /* UITapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITapGestureRecognizer.swift; sourceTree = "<group>"; };
 		630FC8ABC5BFD553873B25767A99D497 /* Pods-NotifyMe_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NotifyMe_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		71B538649156D554D0F03A50AD78448C /* Pods_NotifyMe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotifyMe_Tests.framework; path = "Pods-NotifyMe_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B538649156D554D0F03A50AD78448C /* Pods_NotifyMe_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotifyMe_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A2FD6442C7998D9B14DC8FF7AD8B8E /* Pods-NotifyMe_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotifyMe_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7F584F03901A3F2BFA829940F2357FA1 /* NotifyMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotifyMe.framework; path = NotifyMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F584F03901A3F2BFA829940F2357FA1 /* NotifyMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotifyMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82374BAC6FAB9BC0A76A44FA2388E60F /* Pods-NotifyMe_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotifyMe_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		83705F87A940DCD5F56CC4F5BA4D915E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		859560BE127A9E240D6730E54A0E416E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90E4856E895850854023D57EF7951A6C /* Pods-NotifyMe_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NotifyMe_Example-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98638FE42C28F6312FB63F5F3284116A /* Pods-NotifyMe_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotifyMe_Example-umbrella.h"; sourceTree = "<group>"; };
 		995DC771922C31896DF3A49C7D5EF116 /* NotificationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		9C07FC2F221F92310D2588110C741685 /* NotifyMe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NotifyMe-dummy.m"; sourceTree = "<group>"; };
@@ -66,8 +68,8 @@
 		D472B3A3375A325BAAE3728D9A2945CA /* Pods-NotifyMe_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NotifyMe_Tests-umbrella.h"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D8BEDE9041C874C2A08757AB74F582EF /* Notification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		DA78BA9F03B4045E81E85F68C970A234 /* Pods_NotifyMe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NotifyMe_Example.framework; path = "Pods-NotifyMe_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE33837959F971BE01AE0454308CD0B8 /* Pods-NotifyMe_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NotifyMe_Example.modulemap"; sourceTree = "<group>"; };
+		DA78BA9F03B4045E81E85F68C970A234 /* Pods_NotifyMe_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotifyMe_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE33837959F971BE01AE0454308CD0B8 /* Pods-NotifyMe_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NotifyMe_Example.modulemap"; sourceTree = "<group>"; };
 		F0B9EEC0B3FB923221F69C2D2F986583 /* Pods-NotifyMe_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NotifyMe_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F820E71655BF54B2DB3C3F7761992954 /* Pods-NotifyMe_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NotifyMe_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,12 +146,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		4581A28B1EFB0F4A00AF451D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4581A28C1EFB0F6D00AF451D /* UITapGestureRecognizer.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		58F2D5C95879521EAED91C97AF4F4C2B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				D8BEDE9041C874C2A08757AB74F582EF /* Notification.swift */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -158,19 +167,18 @@
 			children = (
 				2C816A9364C8FF09541D753AD2300971 /* NotificationView.xib */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
 		7624770556F42B0F0CBC8CE4F5DF8EAD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4581A28B1EFB0F4A00AF451D /* Extensions */,
 				995DC771922C31896DF3A49C7D5EF116 /* NotificationView.swift */,
 				9F1F3969514E4DF12051B13A438DB412 /* NotifyMe.swift */,
 				58F2D5C95879521EAED91C97AF4F4C2B /* Model */,
 				724950B4BB34BA1F933C380745EEC3EE /* View */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -179,7 +187,6 @@
 			children = (
 				7624770556F42B0F0CBC8CE4F5DF8EAD /* Classes */,
 			);
-			name = NotifyMe;
 			path = NotifyMe;
 			sourceTree = "<group>";
 		};
@@ -381,6 +388,7 @@
 				22391B42DBA5A5507A6E2B7D98D406E0 /* Notification.swift in Sources */,
 				7544E28CAD5C0935EDBEF62CB7540CB5 /* NotificationView.swift in Sources */,
 				C5009522C4FFCE59471D9759E75B0F3E /* NotificationView.xib in Sources */,
+				4581A28D1EFB0F6D00AF451D /* UITapGestureRecognizer.swift in Sources */,
 				FD9B8E143D29991278AADCBE929A231E /* NotifyMe-dummy.m in Sources */,
 				A854B855598EE78399598D5DAF563C14 /* NotifyMe.swift in Sources */,
 			);

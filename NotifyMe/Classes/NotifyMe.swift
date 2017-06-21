@@ -8,21 +8,28 @@
 
 import UIKit
 
-public class NotifyMe {
+public typealias actionHandler = (Bool) -> ()
+
+public class NotifyMe: NSObject {
     
     // Public properties
     
     private var notificationHeight: CGFloat
     private var notificationBackgroundColor: UIColor
     private var notificationTextColor: UIColor
+    private var handler: actionHandler?
     
     // Public methods
     
-    public func presentNotification(inView view: UIView, text: String) {
+    public func presentNotification(inView view: UIView, text: String, actionHandler: @escaping actionHandler) {
         let notifyView = NotificationView.instanceFromNib()
         let notification = Notification(notificationView: notifyView, backgroundColor: notificationBackgroundColor, height: notificationHeight, text: text, textColor: notificationTextColor)
         
         notifyView.setupView(superView: view, notification: notification)
+        
+        let tap = NotifyMeTapGesture(target: self, action: #selector(userTappedNotification(_:)))
+        tap.actionHandler = actionHandler
+        notifyView.addGestureRecognizer(tap)
         
         UIView.animate(withDuration: 0.5, animations: {
             notifyView.show()
@@ -44,6 +51,10 @@ public class NotifyMe {
                 notification.notificationView.removeFromSuperview()
             }
         })
+    }
+    
+    @objc func userTappedNotification(_ sender: NotifyMeTapGesture) {
+        sender.actionHandler?(true)
     }
     
     public init(backgroundColor: UIColor = .purple, height: CGFloat = 60, textColor: UIColor = .white) {
