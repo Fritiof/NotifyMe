@@ -13,10 +13,13 @@ class NotificationView: UIView {
     @IBOutlet weak var label: UILabel!
     
     private var notification: Notification?
+    private var handler: actionHandler?
     
     func setupView(superView: UIView, notification: Notification) {
+    func setupView(superView: UIView, notification: Notification, actionHandler: actionHandler?) {
         superView.clipsToBounds = true
         self.notification = notification
+        self.handler = actionHandler
         
         let newFrame = CGRect(x: superView.bounds.minX, y: superView.bounds.minY - notification.height, width: superView.bounds.size.width, height: notification.height)
         frame = newFrame
@@ -27,6 +30,10 @@ class NotificationView: UIView {
         self.backgroundColor = notification.backgroundColor
         
         superView.addSubview(self)
+    }
+    
+    @IBAction func userTappedNotification(sender: UITapGestureRecognizer) {
+        handler?(true)
     }
     
     func show() {

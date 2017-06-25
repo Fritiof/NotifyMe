@@ -45,8 +45,14 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="label" destination="1LW-OZ-MtY" id="Hzy-kj-pWG"/>
+                <outletCollection property="gestureRecognizers" destination="Aav-LM-qeK" appends="YES" id="OXl-SI-0kG"/>
             </connections>
             <point key="canvasLocation" x="-37.5" y="-39"/>
         </view>
+        <tapGestureRecognizer id="Aav-LM-qeK">
+            <connections>
+                <action selector="userTappedNotificationWithSender:" destination="iN0-l3-epB" id="ezR-be-flb"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
