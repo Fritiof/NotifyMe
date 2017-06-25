@@ -15,7 +15,6 @@ class NotificationView: UIView {
     private var notification: Notification?
     private var handler: actionHandler?
     
-    func setupView(superView: UIView, notification: Notification) {
     func setupView(superView: UIView, notification: Notification, actionHandler: actionHandler?) {
         superView.clipsToBounds = true
         self.notification = notification

@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func notifyMeButtonTapped(sender: UIButton) {
-        notifyMe?.presentNotification(inView: self.view, text: "dooooh", actionHandler: { _ in })
+        notifyMe?.presentNotification(inView: self.view, text: "dooooh", actionHandler: nil)
         notifyMeSmall?.presentNotification(inView: self.smallView, text: "lalala") { handler in
-            
+            print("winning")
         }
 
     }
